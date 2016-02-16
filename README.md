@@ -1,3 +1,4 @@
+# 3DTouch开发实践の动态设置快捷访问Shortcuts的运用方案（Objective-C实现）
 ### 绪论
 从iOS9开始，我们可以在主屏幕上用力的按一下APP图标，伴随着轻微的反馈，有的图标会弹出1至4个标签，点击这些标签，就可以直接在进入应用前选择你想快速访问的某一个页面，这就是ShortcutAction，本文统称它为「快捷访问」。
 ![快捷访问操作](http://upload-images.jianshu.io/upload_images/1481399-58430e4c215a7820.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -8,6 +9,7 @@
 1. 在用户今天还未签到时，显示「今日签到」；
 2. 用户签到成功后，用代码动态的调整，让快捷标签显示为「已签到」；
 3. 我们甚至可以再追加一个子标题，上面显示当前的积分；
+
 ![签到后的标签，以及动态添加的新标签](http://upload-images.jianshu.io/upload_images/1481399-dd42da0333acee35.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 有很多想象的空间
