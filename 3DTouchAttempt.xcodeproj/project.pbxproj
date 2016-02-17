@@ -15,6 +15,8 @@
 		04618DDB1C5868E800581A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04618DD91C5868E800581A39 /* LaunchScreen.storyboard */; };
 		04618DE61C5868E800581A39 /* _DTouchAttemptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04618DE51C5868E800581A39 /* _DTouchAttemptTests.m */; };
 		04618DF11C5868E800581A39 /* _DTouchAttemptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04618DF01C5868E800581A39 /* _DTouchAttemptUITests.m */; };
+		4E332B041C745A0F00D2C5B9 /* CheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E332B011C745A0F00D2C5B9 /* CheckinViewController.m */; };
+		4E332B051C745A0F00D2C5B9 /* InviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E332B031C745A0F00D2C5B9 /* InviteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		04618DEC1C5868E800581A39 /* 3DTouchAttemptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DTouchAttemptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04618DF01C5868E800581A39 /* _DTouchAttemptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DTouchAttemptUITests.m; sourceTree = "<group>"; };
 		04618DF21C5868E800581A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E332B001C745A0F00D2C5B9 /* CheckinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckinViewController.h; sourceTree = "<group>"; };
+		4E332B011C745A0F00D2C5B9 /* CheckinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckinViewController.m; sourceTree = "<group>"; };
+		4E332B021C745A0F00D2C5B9 /* InviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteViewController.h; sourceTree = "<group>"; };
+		4E332B031C745A0F00D2C5B9 /* InviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				04618DCF1C5868E800581A39 /* AppDelegate.m */,
 				04618DD11C5868E800581A39 /* ViewController.h */,
 				04618DD21C5868E800581A39 /* ViewController.m */,
+				4E332B001C745A0F00D2C5B9 /* CheckinViewController.h */,
+				4E332B011C745A0F00D2C5B9 /* CheckinViewController.m */,
+				4E332B021C745A0F00D2C5B9 /* InviteViewController.h */,
+				4E332B031C745A0F00D2C5B9 /* InviteViewController.m */,
 				04618DD41C5868E800581A39 /* Main.storyboard */,
 				04618DD71C5868E800581A39 /* Assets.xcassets */,
 				04618DD91C5868E800581A39 /* LaunchScreen.storyboard */,
@@ -206,6 +216,7 @@
 				TargetAttributes = {
 					04618DC71C5868E800581A39 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2AYSYH6F88;
 					};
 					04618DE01C5868E800581A39 = {
 						CreatedOnToolsVersion = 7.0;
@@ -270,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04618DD31C5868E800581A39 /* ViewController.m in Sources */,
+				4E332B051C745A0F00D2C5B9 /* InviteViewController.m in Sources */,
 				04618DD01C5868E800581A39 /* AppDelegate.m in Sources */,
+				4E332B041C745A0F00D2C5B9 /* CheckinViewController.m in Sources */,
 				04618DCD1C5868E800581A39 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,10 +425,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 3DTouchAttempt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DarryDai.-DTouchAttempt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -423,10 +439,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 3DTouchAttempt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DarryDai.-DTouchAttempt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -497,6 +516,7 @@
 				04618DF71C5868E800581A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04618DF81C5868E800581A39 /* Build configuration list for PBXNativeTarget "3DTouchAttemptTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +525,7 @@
 				04618DFA1C5868E800581A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04618DFB1C5868E800581A39 /* Build configuration list for PBXNativeTarget "3DTouchAttemptUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				04618DFD1C5868E800581A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
